@@ -70,6 +70,23 @@ Our work involved:
 * Distributed data partitions
 * Quantitative comparison of communication structures
 
+## Public Demo Code
+
+This repository includes [`topology_metrics_demo.py`](./topology_metrics_demo.py), an independently written demonstration of the graph-connectivity analysis used in this research.
+
+The demo constructs several example communication networks and calculates:
+
+- number of nodes and edges,
+- average node degree,
+- graph Laplacian eigenvalues,
+- and the Fiedler value used to compare algebraic connectivity.
+
+To run it locally:
+
+```bash
+pip install -r requirements.txt
+python topology_metrics_demo.py
+
 ## What I Learned
 
 This project changed how I think about machine learning systems.
