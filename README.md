@@ -76,16 +76,19 @@ This repository includes [`topology_metrics_demo.py`](./topology_metrics_demo.py
 
 The demo constructs several example communication networks and calculates:
 
-- number of nodes and edges,
-- average node degree,
-- graph Laplacian eigenvalues,
-- and the Fiedler value used to compare algebraic connectivity.
+* Number of nodes and edges
+* Average node degree
+* Graph Laplacian eigenvalues
+* The Fiedler value used to compare algebraic connectivity
 
 To run it locally:
 
 ```bash
 pip install -r requirements.txt
 python topology_metrics_demo.py
+```
+
+The stochastic block model parameters in the demo are illustrative and are **not** the private experimental configuration used in STRUDEL, so its numerical output is not intended to reproduce the research results reported above.
 
 ## What I Learned
 
@@ -93,11 +96,11 @@ This project changed how I think about machine learning systems.
 
 Model architecture is only one component of a distributed ML system. Performance can also depend on:
 
-* how data is distributed,
-* which agents communicate,
-* how information propagates through the network,
-* the optimization procedure,
-* and the communication cost required to coordinate learning.
+* How data is distributed
+* Which agents communicate
+* How information propagates through the network
+* The optimization procedure
+* The communication cost required to coordinate learning
 
 The project gave me experience moving from simply **building models** to asking and experimentally investigating **research questions about machine-learning systems**.
 
@@ -109,4 +112,4 @@ The project gave me experience moving from simply **building models** to asking 
 
 This is a **research portfolio repository**, not a copy of the private STRUDEL codebase.
 
-Additional pages in this repository document the research methodology, topology analysis, and my individual experience working on the project.
+The underlying research source code remains in the private collaborative STRUDEL repository. This public repository is intended to explain the research problem, my contribution, and the technical concepts I worked with while providing independently written demonstration code that can be shared publicly.
